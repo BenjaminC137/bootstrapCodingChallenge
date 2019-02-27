@@ -26,7 +26,6 @@ body{
 	border-color: lightgray;
 	border-radius: 5px;
 }
-
 footer{
 	text-align: center;
 	font-size: .75em;
@@ -39,7 +38,7 @@ html{
 	font-size: 75%;
 }
 label{
-	font-weight: bold;
+	font-weight: 600;
 }
 .panel{
 	padding: 20px;
