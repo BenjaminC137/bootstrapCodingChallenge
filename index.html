@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>Benjamin Bootstrap</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+<!--	<link rel="stylesheet" type="text/css" href="main.css">-->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -14,6 +14,69 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 	<link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.standalone.min.css”>
+
+	<style>
+		a{
+			color: steelblue;
+		}
+		div a{
+			color: steelblue;
+		}
+		.back-tab{
+			background-color: whitesmoke;
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin: 0px;
+			border-radius: 5px;
+		}
+		.badges{
+			float: right;
+		}
+		body{
+			padding: 25px;
+		}
+		.category{
+		/*	padding: 10px;*/
+			margin: 5px 0px;
+			border-style: solid;
+			border-width: thin;
+			border-color: lightgray;
+			border-radius: 5px;
+		}
+		footer{
+			text-align: center;
+			font-size: .75em;
+		}
+		h3{
+		/*	font-weight:lighter;*/
+			display: inline;
+		}
+		html{
+			font-size: 75%;
+		}
+		label{
+			font-weight: 600;
+		}
+		.panel{
+			padding: 20px;
+		}
+		#saveAndCancelButtons{
+			float: right;
+		}
+		.tab-title{
+			background-color: whitesmoke;
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin: 0px;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			border-bottom: thin solid lightgray;
+		}
+   </style>
+
+
 </head>
 <body>
 	<div class="row flex-md-row-reverse">
@@ -31,15 +94,13 @@
 		<div class="col-md-9">
 			<a href="#"><div id="backToResidents" class="back-tab" >&lt; Back to Residents</div></a>
 			<br>
-									<form>
-
 			<h3 style="font-weight: 300">Add Resident - John Smith</h3> <div id="saveAndCancelButtons"><a href="#">Cancel</a> &nbsp; <button type="submit" class="btn btn-success">Save</button></div>
 			<hr>
 			<div id="profileDiv" class="category">
 				<a class="tab-title" style="display: inline-block" data-toggle="collapse" href="#collapseProfile" role="button" aria-expanded="false" aria-controls="collapseProfile">Profile <span class="badge badges badge-secondary">Required</span></a>
 				<div class="collapse" id="collapseProfile">
 					<div id="profilePanel" class="panel">
-<!--						<form>-->
+						<form>
 							<div class="row">
 								<div class="form-group col-md-4">
 									<label for="firstName">First Name*</label>
