@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Benjamin Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.standalone.min.css”>
+</head>
+<body>
+	<div class="row flex-sm-row-reverse">
+		<div class="col-sm-3">
+			<div class="list-group">
+				<a data-toggle="collapse" href="#collapseProfile" role="button" aria-expanded="false" aria-controls="collapseProfile" class="list-group-item list-group-item-action">Profile</a>
+				<a data-toggle="collapse" href="#collapsePositionDetails" role="button" aria-expanded="false" aria-controls="collapsePositionDetails" class="list-group-item list-group-item-action">Position Details</a>
+				<a data-toggle="collapse" href="#collapsePriorGMETraining" role="button" aria-expanded="false" aria-controls="collapsePriorGMETraining" class="list-group-item list-group-item-action">Prior GME Training</a>
+				<a data-toggle="collapse" href="#collapseScholarlyActivity" role="button" aria-expanded="false" aria-controls="collapseScholarlyActivity" class="list-group-item list-group-item-action">Scholarly Activity</a>
+				<a data-toggle="collapse" href="#collapseComments" role="button" aria-expanded="false" aria-controls="collapseComments" class="list-group-item list-group-item-action">Comments</a>
+				<a data-toggle="collapse" href="#collapseAdminOnly" role="button" aria-expanded="false" aria-controls="collapseAdminOnly" class="list-group-item list-group-item-action">Admin Only</a>
+			</div>
+			<br>
+		</div>
+		<div class="col-sm-9">
+			<a href="#"><div id="backToResidents" class="back-tab" >&lt; Back to Residents</div></a>
+			<br>
+			<h3>Add Resident - John Smith</h3> <div id="saveAndCancelButtons"><a href="#">Cancel</a> &nbsp; <button type="button" class="btn btn-success">Save</button></div>
+			<hr>
+			<div id="profileDiv" class="category">
+				<a class="tab-title" style="display: inline-block" data-toggle="collapse" href="#collapseProfile" role="button" aria-expanded="false" aria-controls="collapseProfile">Profile <span class="badge badges badge-secondary">Required</span></a>
+				<div class="collapse" id="collapseProfile">
+					<div id="profilePanel" class="panel">
+						<form>
+							<div class="row">
+								<div class="form-group col-sm-4">
+									<label for="firstName">First Name*</label>
+									<input type="text" class="form-control" id="firstName">
+								</div>
+								<div class="form-group col-sm-2">
+									<label for="middleInitial">Middle Initial</label>
+									<input type="text" class="form-control" id="middleInitial">
+								</div>
+								<div class="form-group col-sm-4">
+									<label for="lastName">Last Name</label>
+									<input type="text" class="form-control" id="lastName">
+								</div>
+								<div class="form-group col-sm-2">
+									<label for="suffix">Suffix</label>
+									<input type="text" class="form-control" id="suffix">
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-sm-6">
+									<label for="inputEmail">Email</label>
+									<input type="email" class="form-control" id="inputEmail">
+								</div>
+								<div class="form-group col-sm-6">
+									<label for="confirmEmail">Confirm Email</label>
+									<input type="email" class="form-control" id="confirmEmail">
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-sm-3">
+									<label for="social">Social Security Number</label>
+									<input type="number" class="form-control" id="social">
+								</div>
+								<div class="form-group col-sm-3">
+									<label for="dob">Date of Birth</label>
+									<input type="date" class="form-control" id="dob">
+		<!--							<input data-provide="datepicker">-->
+								</div>
+								<div class="form-group col-sm-3">
+									<label for="gender">Gender</label>
+									<select class="form-control" id="gender">
+										<option disabled selected value> </option>
+										<option>Male</option>
+										<option>Female</option>
+										<option>Other</option>
+										<option>I prefer not to answer</option>
+									</select>
+								</div>
+								<div class="form-group col-sm-3">
+									<label for="ethnicity">Ethnicity</label>
+									<select class="form-control" id="ethnicity">
+										<option disabled selected value> </option>
+										<option>Mixed Race</option>
+										<option>Arctic (Siberian, Eskimo)</option>
+										<option>Caucasian (European)</option>
+										<option>Caucasian (Indian)</option>
+										<option>Caucasian (Middle East)</option>
+										<option>Caucasian (North African, Other)</option>
+										<option>Indigenous Australian</option>
+										<option>Native American</option>
+										<option>North East Asian (Mongol, Tibetan, Korean Japanese, etc)</option>
+										<option>Pacific (Polynesian, Micronesian, etc)</option>
+										<option>South East Asian (Chinese, Thai, Malay, Filipino, etc)</option>
+										<option>West African, Bushmen, Ethiopian</option>
+										<option>Other Race</option>
+									</select>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="form-group col-sm-6">
+									<label for="graduatedFrom">Medical school resident graduated from</label>
+									<select class="form-control" id="graduatedFrom">
+										<option disabled selected value> </option>
+										<option>Harvard</option>
+										<option>Yale</option>
+										<option>Other</option>
+									</select>
+								</div>
+								<div class="form-group col-sm-6">
+									<label for="availableSchools">Available Medical Schools</label>
+									<select class="form-control" id="availableSchools">
+										<option disabled selected value> </option>
+										<option>Northwestern University</option>
+										<option>University of Illinois</option>
+										<option>UCLA</option>
+										<option>Other</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-sm-3">
+									<label for="dob">Month/Year Degree Received</label>
+									<input type="date" class="form-control" id="dob">
+								</div>
+							</div>
+						</form>
+						<br>
+						<h6>Caselog last login</h6>
+						<div id="caselogLastLogin">06/15/2018</div>
+						<br>
+					</div>
+				</div>
+			</div>
+			<div id="positionDetailsDiv" class="category">
+				<a class="tab-title" style="display: inline-block" data-toggle="collapse" href="#collapsePositionDetails" role="button" aria-expanded="false" aria-controls="collapsePositionDetails">Position Details<span class="badge badges badge-secondary">Required</span></a>
+				<div class="collapse" id="collapsePositionDetails">
+					Here is some information.
+				</div>
+			</div>
+			<div id="priorGMETrainingDiv" class="category">
+				<a class="tab-title" style="display: inline-block" data-toggle="collapse" href="#collapsePriorGMETraining" role="button" aria-expanded="false" aria-controls="collapsePriorGMETraining">Prior GME Training<span class="badge badges badge-danger">Incomplete</span></a>
+				<div class="collapse" id="collapsePriorGMETraining">
+					Here is some information.
+				</div>
+			</div>
+			<div id="scholarlyActivityDiv" class="category">
+				<a class="tab-title" style="display: inline-block" data-toggle="collapse" href="#collapseScholarlyActivity" role="button" aria-expanded="false" aria-controls="collapseScholarlyActivity">Scholarly Activity</a>
+				<div class="collapse" id="collapseScholarlyActivity">
+					Here is some information.
+				</div>
+			</div>
+			<div id="commentsDiv" class="category">
+				<a class="tab-title" style="display: inline-block" data-toggle="collapse" href="#collapseComments" role="button" aria-expanded="false" aria-controls="collapseComments">Comments<span class="badge badges badge-warning" style="color: white">Missing</span></a>
+				<div class="collapse" id="collapseComments">
+					Here is some information.
+				</div>
+			</div>
+			<div id="adminOnlyDiv" class="category">
+				<a class="tab-title" style="display: inline-block" data-toggle="collapse" href="#collapseAdminOnly" role="button" aria-expanded="false" aria-controls="collapseAdminOnly">Admin Only</a>
+				<div class="collapse" id="collapseAdminOnly">
+					Here is some information.
+				</div>
+			</div>
+
+		<!--
+
+		<div class="form-group">
+			<label for="dateofbirth" class="col-sm-2 control-label">Date of Birth:</label>
+
+			<div class="col-sm-4 input-group date">
+
+			<input type="text" class="form-control inputstl" id="dateofbirth" placeholder="Select Date"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+			</div>
+		</div>
+
+		-->
+
+
+
+
+<!--
+			<div class="container">
+			<div class="row">
+				<div class='col-sm-6'>
+					<div class="form-group">
+						<div class='input-group date' id='datetimepicker1'>
+							<input type='text' class="form-control" />
+							<span class="input-group-addon">
+								<span class="glyphicon glyphicon-calendar"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
+					$(function () {
+						$('#datetimepicker1').datetimepicker();
+					});
+				</script>
+			</div>
+		</div>
+
+		<div class="input-group date" data-provide="datepicker">
+			<input type="text" class="form-control">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"></span>
+			</div>
+		</div>
+
+
+			<div class="input-group date" data-provide="datepicker">
+			<input type="text" class="form-control">
+			<div class="input-group-addon">
+				<span class="glyphicon glyphicon-th"></span>
+			</div>
+		</div>
+
+
+-->
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+	<br>
+	<br>
+	<footer>
+		© 2019 ACCREDITATION COUNCIL FOR GRADUATE MEDICAL EDUCATION (ACGME)
+		<br>
+		<i>CONFIDENTIAL MATERIAL</i>
+	</footer>
+	<script type=’text/javascript’ src=”app.js”></script>
+
+<!--	<script type=’text/javascript’ src=”https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.min.js”></script>-->
+
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
